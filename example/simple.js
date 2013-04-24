@@ -3,7 +3,6 @@ var net = require('net');
 
 var open = 0;
 net.createServer(function (con) {
-  con.on('data', 
   console.log('open: %s', ++open);
   setTimeout(function () {
     con.end('ok');
