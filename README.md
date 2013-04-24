@@ -3,6 +3,12 @@
 
 A TCP proxy that protects services from having too many open connections.
 
+If the number of open connections has been reached, all incoming traffic will
+be paused and buffered until it's safe to connect again.
+
+Use this for example in front of a `mysqld`, as node can handle bazillions of
+connections but a MySQL server can't.
+
 ## Usage
 
 With a service running on port `8080`, start a **Proxector** on port `9090`
