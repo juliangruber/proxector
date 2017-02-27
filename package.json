@@ -15,7 +15,7 @@
     "debug": "^2.3.3"
   },
   "devDependencies": {
-    "tap": "*"
+    "tap": ">=10.2.2"
   },
   "keywords": [
     "proxy",
